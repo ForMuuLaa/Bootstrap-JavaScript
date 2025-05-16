@@ -49,4 +49,3 @@ button.addEventListener("click", () => {
     toggle_class_banner(div, "bg-body-tertiary");
     toggle_class_narbar(nav, "bg-dark", "bg-body-tertiary");
 });
-// greetUser();
