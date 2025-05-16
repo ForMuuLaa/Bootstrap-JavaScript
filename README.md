@@ -200,3 +200,12 @@ Theme: Bootstrap 5, with light theme by default ```data-bs-theme="light```
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </main>
+
+
+| Feature              | Basic   | Pro     | Enterprise   |
+| -------------------- | ------- | ------- | ------------ |
+| **Price**            | \$10/mo | \$30/mo | Custom Quote |
+| **Users**            | 5       | 11      | Unlimited    |
+| **Cloud Storage**    | 5 GB    | 50 GB   | 1 TB         |
+| **Email Support**    | ❌      | ✅     | ✅          |
+| **Priority Support** | ❌      | ❌     | ✅          |
