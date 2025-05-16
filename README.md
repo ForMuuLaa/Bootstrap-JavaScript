@@ -118,27 +118,85 @@ Theme: Bootstrap 5, with light theme by default ```data-bs-theme="light```
                   </section>
               </main>
           
-# link:contact.html
-🔝 Header / Navbar
-Responsive Bootstrap navbar
+# contact.html
 
-Links to: Home, About, Contact (active)
+## 🔝 Header / Navbar
+- Responsive Bootstrap navbar
+- Links to: Home, About, Contact.
+- Collapsible menu for mobile view
 
-Collapsible menu for mobile view
+          
+                  <!-- -------------------------- -->
+                  <!-- navbar -->
+                  <!-- -------------------------- -->
+                  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <div class="container-fluid">
+                          <a id="nav-class" class="navbar-brand" href="/index.html">Navbar</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                      <a id="nav-class" class="nav-link" href="/index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a id="nav-class" class="nav-link" href="/about.html">About</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a id="nav-class" class="nav-link active" aria-current="page"
+                                          href="/contact.html">Contact</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </nav>
+              </header>
 
-📢 Banner Section
-Full-width dark background banner
 
-Centered title: 🌐 Contact Us 🌐
+## 📢 Banner Section
+- Full-width dark background banner
+- Centered title: 🌐 Contact Us 🌐
 
-✉️ Contact Form
-Bootstrap-styled form with:
+              <!-- -------------------------- -->
+              <!-- banner -->
+              <!-- -------------------------- -->
+              <div id="main-banner" class="container-fluid bg-dark text-white text-center py-5">
+                  <h1 id="title">🌐 Contact Us 🌐</h1>
+              </div>
 
-Email input with helper text
+## ✉️ Contact Form
+- Bootstrap-styled form with:
+- Email input with helper text
+- First and last name inputs (side-by-side on large screens)
+- Checkbox option ("Check me out")
+- Submit button
 
-First and last name inputs (side-by-side on large screens)
 
-Checkbox option ("Check me out")
-
-Submit button
-
+                        <!-- -------------------------- -->
+                        <!-- contavt form -->
+                        <!-- -------------------------- -->
+                        <main>
+                            <form class="contact-form p-5">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </main>
