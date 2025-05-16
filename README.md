@@ -3,8 +3,21 @@
 This project has Bootstrap layout and components, while also using JavaScript skills with variables, functions, and strings.
 
 ### index.html
-You can download this repository as a zip file or you can clone it. Refer to the video recording for guidelines on cloning. (It will be at the end of the video.) Or, refer to your curriculum's guide on Git commands in terminal.
+✅ Page Overview
+Title: Event Center
+Theme: Bootstrap 5, with light theme by default ```data-bs-theme="light```
 
-## How to finish this project:
+🔝 Header / Navbar
+- Uses Bootstrap's responsive navbar.
+- Links: Home, About, Contact.
+- Responsive toggle button for smaller screens.
 
-First, make sure you refer to the Bootstrap documentation: https://getbootstrap.com/
+🎉 Main Banner
+- Dark-themed banner section with centered title: "Welcome to the Event Center"
+- Includes a button that runs changeTitle() JavaScript function.
+
+💳 Cards Section (Product Plans)
+- Three Bootstrap cards:
+- Basic Plan: 5 GB, 1 user — includes theme toggle button.
+- Pro Plan: 50 GB, 5 users, email support — has an "About" link.
+- Enterprise Plan: 1 TB, unlimited users, priority support — also has an "About" link.
