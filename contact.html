@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Navbar</a>
+                <a id="nav-class" class="navbar-brand" href="/index.html">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,36 +24,38 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a id="nav-class" class="nav-link" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a id="nav-class" class="nav-link" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/event.html">Event</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/location.html">Location</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <a id="nav-class" class="nav-link active" aria-current="page"
+                                href="/contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <div id="main-banner" class="container-fluid bg-dark text-white text-center py-5">
+        <h1 id="title">🌐 Contact Us 🌐</h1>
+    </div>
 
     <main>
-        <form class="contact-form">
+        <form class="contact-form p-5">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="row my-5">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">

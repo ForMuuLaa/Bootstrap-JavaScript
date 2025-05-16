@@ -1,6 +1,14 @@
 nav a:hover {
     text-transform: uppercase;
-    background: pink;
+    background: rgb(159, 162, 172);
+    
+}
+
+#nav-class {
+    border-radius: 20px;
+}
+#table {
+    margin-top: 50px;
 }
 
 footer {
@@ -18,7 +26,6 @@ footer {
     width: 50%;
     margin: auto;
     margin-top: 50px;
-    background: rgba( 24, 96, 124, 0.5);
     padding: 18px;
     border-radius: 25px;
 }

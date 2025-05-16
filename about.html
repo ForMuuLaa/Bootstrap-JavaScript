@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Navbar</a>
+                <a id="nav-class" class="navbar-brand" href="/index.html">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,19 +24,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a id="nav-class" class="nav-link" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a id="nav-class" class="nav-link active" aria-current="page" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/event.html">Event</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/location.html">Location</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
+                            <a id="nav-class" class="nav-link" href="/contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -45,6 +39,59 @@
     </header>
 
     <main>
+        <div id="main-banner"class="container-fluid bg-dark text-white text-center py-5">
+            <h1 id="title">🛍️ Product Comparison Table 🛍️</h1>
+        </div>
+        <div
+            class="table-responsive container p-5"
+            id="table"
+        >
+            <table
+                class="table"
+            >
+                <thead>
+                    <tr>
+                        <th class="p-4" scope="col">Feature</th>
+                        <th class="p-4" scope="col">Basic Plan</th>
+                        <th class="p-4" scope="col">Pro Plan</th>
+                        <th class="p-4" scope="col">Enterprise Plan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td class="p-3" scope="row">Price</td>
+                        <td class="p-3" >$10/mo</td>
+                        <td class="p-3" >$30/mo</td>
+                        <td class="p-3" >Custom Quote</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="p-3" scope="row">Users</td>
+                        <td class="p-3" >5</td>
+                        <td class="p-3" >11</td>
+                        <td class="p-3" >Unlimited</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-3" scope="row">Cloud Storage</td>
+                        <td class="p-3" >5 GB</td>
+                        <td class="p-3" >50 GB</td>
+                        <td class="p-3" >1 TB</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="p-3" scope="row">Email Support</td>
+                        <td class="p-3" >❌</td>
+                        <td class="p-3" >✅</td>
+                        <td class="p-3" >✅</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-3" scope="row">Priority Support</td>
+                        <td class="p-3" >❌</td>
+                        <td class="p-3" >❌</td>
+                        <td class="p-3" >✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
 
     </main>
 
