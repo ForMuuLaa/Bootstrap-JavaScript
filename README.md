@@ -322,4 +322,147 @@ Features Compared:
         
 
     </main>
-    
+
+# JavaScript & Css
+## ✅ Functions Defined
+```changeTitle()```
+- Changes the content of the element with ID title to a new message.
+
+```greetUser()```
+- Displays an alert popup: "Hello, user!".
+
+```toggleTheme(button)```
+- Toggles the data-bs-theme between "dark" and "light" on the <body>.
+- Updates button text accordingly.
+
+```toggle_class_banner(element, class_added)```
+- Adds/removes a class on the given element (toggle behavior).
+- toggle_class_narbar(element, class_added, class_removed)
+- Switches between two specified classes on the navbar element.
+
+## 🎯 Event Listener Logic
+Targets:
+
+- ```button``` (ID: ```"button"```)
+- ```div``` (ID: ```"main-banner"```)
+- ```nav``` (ID: ```"navbar"```)
+
+On button click:
+
+- Toggles ```"bg-body-tertiary"``` on banner
+- Switches navbar class between ```"bg-dark"``` and ```"bg-body-tertiary"```
+
+
+                    function changeTitle() {
+                        let title = document.getElementById("title");
+                        title.innerHTML = "This title was changed by JavaScript.";
+                    }
+                    
+                    function greetUser() {
+                        alert("Hello, user!");
+                    }
+                    
+                    
+                      function toggleTheme(button) {
+                        const body = document.body;
+                        const currentTheme = body.getAttribute("data-bs-theme");
+                    
+                        if (currentTheme === "dark") {
+                          body.setAttribute("data-bs-theme", "light");
+                          button.textContent = "Switch to Dark Mode";
+                        } else {
+                          body.setAttribute("data-bs-theme", "dark");
+                          button.textContent = "Switch to Light Mode";
+                        }
+                      }
+                    
+                    
+                    function toggle_class_banner(element, class_added) {
+                        if (element.classList.contains(class_added)) {
+                            element.classList.remove(class_added);
+                        } else {
+                            element.classList.add(class_added);
+                        }
+                    }
+                    
+                    
+                    function toggle_class_narbar(element, class_added, class_removed) {
+                        if (element.classList.contains(class_added)) {
+                            element.classList.remove(class_added);
+                            element.classList.add(class_removed);
+                        } else {
+                            element.classList.remove(class_removed);
+                            element.classList.add(class_added);
+                        }
+                    }
+                    
+                    const button = document.getElementById("button");
+                    const div = document.getElementById("main-banner");
+                    const nav = document.getElementById("navbar");
+                    
+                    button.addEventListener("click", () => {
+                        toggle_class_banner(div, "bg-body-tertiary");
+                        toggle_class_narbar(nav, "bg-dark", "bg-body-tertiary");
+                    });
+
+## 🔘 Navbar Styling
+```nav a:hover:```
+
+- Text transforms to uppercase on hover.
+- Background color changes to ```rgb(159, 162, 172)```.
+
+```#nav-class```:
+
+- Applies rounded corners with ```border-radius: 20px```.
+
+## 📊 Table Section
+```#table```:
+
+- Adds top margin of ```50px```.
+
+## 🦶 Footer
+```footer```:
+
+- Fixed at bottom.
+- Full width (```100%```), dark background (```#333```), white text.
+- Centered text with ```10px``` padding (except bottom: ```0px```).
+
+## 📬 Contact Form
+```.contact-form```:
+
+- Centered with ```margin: auto```.
+- Width set to 50% of the parent.
+- Top margin: ```50px```; padding: ```18px```.
+- Rounded corners with ```border-radius: 25px```.
+
+                    nav a:hover {
+                        text-transform: uppercase;
+                        background: rgb(159, 162, 172);
+                        
+                    }
+                    
+                    #nav-class {
+                        border-radius: 20px;
+                    }
+                    #table {
+                        margin-top: 50px;
+                    }
+                    
+                    footer {
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: #333;
+                        color: white;
+                        text-align: center;
+                        padding: 10px;
+                        padding-bottom: 0px;
+                    }
+                    
+                    .contact-form {
+                        width: 50%;
+                        margin: auto;
+                        margin-top: 50px;
+                        padding: 18px;
+                        border-radius: 25px;
+                    }
