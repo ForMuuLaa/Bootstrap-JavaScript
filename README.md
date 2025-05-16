@@ -201,7 +201,63 @@ Theme: Bootstrap 5, with light theme by default ```data-bs-theme="light```
                             </form>
                         </main>
 
+ # about.html
+## 🔝 Header / Navbar
+- Responsive Bootstrap navbar
+- Links to: Home, About (active), Contact
 
+
+          <header>
+          
+                  <!-- -------------------------- -->
+                  <!-- navbar -->
+                  <!-- -------------------------- -->
+                  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <div class="container-fluid">
+                          <a id="nav-class" class="navbar-brand" href="/index.html">Navbar</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                      <a id="nav-class" class="nav-link" href="/index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a id="nav-class" class="nav-link active" aria-current="page" href="/about.html">About</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a id="nav-class" class="nav-link" href="/contact.html">Contact</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </nav>
+              </header>
+              
+
+## 📢 Banner Section
+- Dark-themed banner with centered heading
+- 🛍️ Product Comparison Table 🛍️
+
+
+
+              <!-- -------------------------- -->
+              <!-- banner -->
+              <!-- -------------------------- -->
+              <main>
+                  <div id="main-banner"class="container-fluid bg-dark text-white text-center py-5">
+                      <h1 id="title">🛍️ Product Comparison Table 🛍️</h1>
+                  </div>
+
+
+## 📊 Product Comparison Table
+- Responsive Bootstrap table showing 3 plans:
+- Basic, Pro, and Enterprise
+
+Features Compared:
 | Feature              | Basic   | Pro     | Enterprise   |
 | -------------------- | ------- | ------- | ------------ |
 | **Price**            | \$10/mo | \$30/mo | Custom Quote |
@@ -209,3 +265,61 @@ Theme: Bootstrap 5, with light theme by default ```data-bs-theme="light```
 | **Cloud Storage**    | 5 GB    | 50 GB   | 1 TB         |
 | **Email Support**    | ❌      | ✅     | ✅          |
 | **Priority Support** | ❌      | ❌     | ✅          |
+
+
+<!-- -------------------------- -->
+<!-- table -->
+<!-- -------------------------- -->
+        <div
+            class="table-responsive container p-5"
+            id="table"
+        >
+            <table
+                class="table"
+            >
+                <thead>
+                    <tr>
+                        <th class="p-4" scope="col">Feature</th>
+                        <th class="p-4" scope="col">Basic Plan</th>
+                        <th class="p-4" scope="col">Pro Plan</th>
+                        <th class="p-4" scope="col">Enterprise Plan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td class="p-3" scope="row">Price</td>
+                        <td class="p-3" >$10/mo</td>
+                        <td class="p-3" >$30/mo</td>
+                        <td class="p-3" >Custom Quote</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="p-3" scope="row">Users</td>
+                        <td class="p-3" >5</td>
+                        <td class="p-3" >11</td>
+                        <td class="p-3" >Unlimited</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-3" scope="row">Cloud Storage</td>
+                        <td class="p-3" >5 GB</td>
+                        <td class="p-3" >50 GB</td>
+                        <td class="p-3" >1 TB</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="p-3" scope="row">Email Support</td>
+                        <td class="p-3" >❌</td>
+                        <td class="p-3" >✅</td>
+                        <td class="p-3" >✅</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-3" scope="row">Priority Support</td>
+                        <td class="p-3" >❌</td>
+                        <td class="p-3" >❌</td>
+                        <td class="p-3" >✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+    </main>
+    
